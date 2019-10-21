@@ -13,9 +13,13 @@
 		7EA78CD623596BC400D7B92F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EA78CD523596BC400D7B92F /* Assets.xcassets */; };
 		7EA78CD923596BC400D7B92F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EA78CD723596BC400D7B92F /* LaunchScreen.storyboard */; };
 		7EA78CDC23596BC400D7B92F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EA78CDB23596BC400D7B92F /* main.m */; };
+		7EA78CE423598D8600D7B92F /* UILabel+Addtion.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EA78CE323598D8600D7B92F /* UILabel+Addtion.m */; };
+		7ED36FAA235D483700F9D9E4 /* UITapGestureRecognizer+Addtion.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ED36FA9235D483700F9D9E4 /* UITapGestureRecognizer+Addtion.m */; };
+		893472E1715B97B57E81ABD0 /* libPods-TruncationText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E43CDC58EF6175D2D9ECD038 /* libPods-TruncationText.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		10E3A90F56099DAE196D0911 /* Pods-TruncationText.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TruncationText.debug.xcconfig"; path = "Target Support Files/Pods-TruncationText/Pods-TruncationText.debug.xcconfig"; sourceTree = "<group>"; };
 		7EA78CC923596BC100D7B92F /* TruncationText.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TruncationText.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EA78CCC23596BC100D7B92F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7EA78CCD23596BC100D7B92F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +30,12 @@
 		7EA78CD823596BC400D7B92F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7EA78CDA23596BC400D7B92F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7EA78CDB23596BC400D7B92F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7EA78CE223598D8600D7B92F /* UILabel+Addtion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+Addtion.h"; sourceTree = "<group>"; };
+		7EA78CE323598D8600D7B92F /* UILabel+Addtion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Addtion.m"; sourceTree = "<group>"; };
+		7ED36FA8235D483700F9D9E4 /* UITapGestureRecognizer+Addtion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITapGestureRecognizer+Addtion.h"; sourceTree = "<group>"; };
+		7ED36FA9235D483700F9D9E4 /* UITapGestureRecognizer+Addtion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITapGestureRecognizer+Addtion.m"; sourceTree = "<group>"; };
+		9B3209FBDAE574F5FE18BAF2 /* Pods-TruncationText.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TruncationText.release.xcconfig"; path = "Target Support Files/Pods-TruncationText/Pods-TruncationText.release.xcconfig"; sourceTree = "<group>"; };
+		E43CDC58EF6175D2D9ECD038 /* libPods-TruncationText.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TruncationText.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +43,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				893472E1715B97B57E81ABD0 /* libPods-TruncationText.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		70D5F988CDEF745D0ECB9CB6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E43CDC58EF6175D2D9ECD038 /* libPods-TruncationText.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7EA78CC023596BC100D7B92F = {
 			isa = PBXGroup;
 			children = (
 				7EA78CCB23596BC100D7B92F /* TruncationText */,
 				7EA78CCA23596BC100D7B92F /* Products */,
+				93B681090ED49EDBE6AA6545 /* Pods */,
+				70D5F988CDEF745D0ECB9CB6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +83,10 @@
 				7EA78CCD23596BC100D7B92F /* AppDelegate.m */,
 				7EA78CCF23596BC100D7B92F /* ViewController.h */,
 				7EA78CD023596BC100D7B92F /* ViewController.m */,
+				7EA78CE223598D8600D7B92F /* UILabel+Addtion.h */,
+				7EA78CE323598D8600D7B92F /* UILabel+Addtion.m */,
+				7ED36FA8235D483700F9D9E4 /* UITapGestureRecognizer+Addtion.h */,
+				7ED36FA9235D483700F9D9E4 /* UITapGestureRecognizer+Addtion.m */,
 				7EA78CD223596BC100D7B92F /* Main.storyboard */,
 				7EA78CD523596BC400D7B92F /* Assets.xcassets */,
 				7EA78CD723596BC400D7B92F /* LaunchScreen.storyboard */,
@@ -71,6 +96,15 @@
 			path = TruncationText;
 			sourceTree = "<group>";
 		};
+		93B681090ED49EDBE6AA6545 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				10E3A90F56099DAE196D0911 /* Pods-TruncationText.debug.xcconfig */,
+				9B3209FBDAE574F5FE18BAF2 /* Pods-TruncationText.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -78,6 +112,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7EA78CDF23596BC400D7B92F /* Build configuration list for PBXNativeTarget "TruncationText" */;
 			buildPhases = (
+				302131D1D8BBB331CB11210E /* [CP] Check Pods Manifest.lock */,
 				7EA78CC523596BC100D7B92F /* Sources */,
 				7EA78CC623596BC100D7B92F /* Frameworks */,
 				7EA78CC723596BC100D7B92F /* Resources */,
@@ -136,11 +171,38 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		302131D1D8BBB331CB11210E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TruncationText-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7EA78CC523596BC100D7B92F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EA78CE423598D8600D7B92F /* UILabel+Addtion.m in Sources */,
+				7ED36FAA235D483700F9D9E4 /* UITapGestureRecognizer+Addtion.m in Sources */,
 				7EA78CD123596BC100D7B92F /* ViewController.m in Sources */,
 				7EA78CDC23596BC400D7B92F /* main.m in Sources */,
 				7EA78CCE23596BC100D7B92F /* AppDelegate.m in Sources */,
@@ -283,6 +345,7 @@
 		};
 		7EA78CE023596BC400D7B92F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10E3A90F56099DAE196D0911 /* Pods-TruncationText.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -299,6 +362,7 @@
 		};
 		7EA78CE123596BC400D7B92F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B3209FBDAE574F5FE18BAF2 /* Pods-TruncationText.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
