@@ -62,10 +62,11 @@
         [attributedString addAttribute:NSFontAttributeName value:tailFont range:attributeRange];
         self.attributedText = attributedString;
 
+        self.userInteractionEnabled = YES;
+        UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tapAction:)];
+        [self addGestureRecognizer:tap];
     }
-    self.userInteractionEnabled = YES;
-    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tapAction:)];
-    [self addGestureRecognizer:tap];
+    
     
 }
 
