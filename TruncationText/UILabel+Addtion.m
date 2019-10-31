@@ -33,11 +33,8 @@
                 [lastLineAttr1 addAttribute:NSFontAttributeName value:self.font range:NSMakeRange(0, lastLineString.length)];
                 lastLineW = [self sizeWithAttributeText:lastLineAttr1].width;
             }
-            while (lastLineW + tailW > width) {
+            if (lastLineW + tailW > width) {
                 lastLineString = [lastLineString substringToIndex:lastLineString.length-1];
-                NSMutableAttributedString *lastLineAttr1 = [[NSMutableAttributedString alloc]initWithString:lastLineString];
-                [lastLineAttr1 addAttribute:NSFontAttributeName value:self.font range:NSMakeRange(0, lastLineString.length)];
-                lastLineW = [self sizeWithAttributeText:lastLineAttr1].width;
             }
             
         }else{
